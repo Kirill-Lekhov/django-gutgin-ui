@@ -1,0 +1,25 @@
+{% extends "_base.html" %}
+{% block title %}Gutgin password generator{% endblock title %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Gutgin generators</h1>
+                <p>
+                    This page presents the generators built into Gutgin.
+                </p>
+                <p class="text-muted">
+                    A dynamic content update system has not yet been developed, refresh the page to get fresh results.
+                </p>
+
+                <div class="mt-5">
+                    <h3>Gutgin PasswordGenerator</h3>
+
+                    <label for="id_password">Your password:</label>
+                    <input id="id_password" readonly value="{{ password }}">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
